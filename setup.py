@@ -1,12 +1,14 @@
-from setuptools import setup, find_packages
+#!/usr/bin/env python3
+
+from setuptools import setup
+import setuptools.command.build_py
+from distutils.spawn import find_executable
+import subprocess
+from subprocess import check_call
+import errno
+
+
 
 setup(
-    name='MyPackageName',
-    version='1.0.0',
-    url='https://github.com/mypackage.git',
-    author='Author Name',
-    author_email='author@gmail.com',
-    description='Description of my package',
-    packages=find_packages(),    
-    install_requires=['numpy'],
+        install_requires = ['protobuf >=3.21.12'],
 )
