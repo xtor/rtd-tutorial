@@ -22,8 +22,13 @@ extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.autosummary',
     'sphinx.ext.intersphinx',
+    'sphinxcontrib.plantuml',
 ]
 autosummary_generate = True
+
+
+plantuml = 'java -Djava.awt.headless=true -jar /usr/share/plantuml/plantuml.jar'
+plantuml_output_format = 'png'
 
 #intersphinx_mapping = {
 #    'python': ('https://docs.python.org/3/', None),
