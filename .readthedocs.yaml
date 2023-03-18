@@ -4,11 +4,13 @@ build:
   os: "ubuntu-22.04"
   tools:
     python: "3.10"
+  apt_packages:
+    - plantuml
 
 python:
   # Install our python package before building the docs
   install:
-    - method: pip
+    - method: setuptools
       path: .
 
 sphinx:
