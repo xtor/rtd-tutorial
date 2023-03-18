@@ -6,6 +6,7 @@ build:
     python: "3.10"
   apt_packages:
     - plantuml
+    - python3-sphinxcontrib.plantuml
 
 python:
   # Install our python package before building the docs
